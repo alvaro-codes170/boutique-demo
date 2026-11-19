@@ -37,7 +37,8 @@ export const ENVIO = {
 // porcentaje: se aplica solo a los productos, nunca al envío.
 // minimo: importe mínimo de productos (antes del descuento) para poder usarlo; 0 = sin mínimo.
 export const CODIGOS = {
-  BIENVENIDA10: { porcentaje: 10, minimo: 0 }
+  BIENVENIDA10: { porcentaje: 10, minimo: 0 },
+  OTOÑO15: { porcentaje: 15, minimo: 80 }
 };
 
 // Formas de entrega

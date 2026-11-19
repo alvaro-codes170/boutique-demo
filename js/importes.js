@@ -40,18 +40,29 @@ export function normalizarCodigo(texto) {
   return String(texto ?? '').trim().toUpperCase();
 }
 
+/** Para comparar sin tildes ni eñes: "otono15" y "OTOÑO15" → "OTONO15" */
+function sinTildes(texto) {
+  return normalizarCodigo(texto).normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+
+/** Busca el código en CODIGOS aunque se haya escrito sin tilde o sin ñ. */
+function buscarCodigo(codigo) {
+  return Object.keys(CODIGOS).find((clave) => sinTildes(clave) === sinTildes(codigo));
+}
+
 /**
  * Comprueba un código contra un subtotal (en céntimos).
  * Devuelve { valido, codigo, porcentaje, error }.
  */
 export function validarCodigo(texto, subtotal) {
-  const codigo = normalizarCodigo(texto);
-  if (!codigo) return { valido: false, codigo, porcentaje: 0, error: '' };
+  const escrito = normalizarCodigo(texto);
+  if (!escrito) return { valido: false, codigo: escrito, porcentaje: 0, error: '' };
 
-  const regla = CODIGOS[codigo];
-  if (!regla) {
-    return { valido: false, codigo, porcentaje: 0, error: `El código «${codigo}» no existe. Revisa que esté bien escrito.` };
+  const codigo = buscarCodigo(escrito); // el nombre oficial, p. ej. "OTOÑO15"
+  if (!codigo) {
+    return { valido: false, codigo: escrito, porcentaje: 0, error: `El código «${escrito}» no existe. Revisa que esté bien escrito.` };
   }
+  const regla = CODIGOS[codigo];
   if (subtotal < aCentimos(regla.minimo)) {
     return { valido: false, codigo, porcentaje: 0, error: `El código ${codigo} es válido para pedidos de ${formatearPrecio(regla.minimo)} o más.` };
   }
