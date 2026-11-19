@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boutique Lino y Alba · Moda de fibras naturales en Fuente Alta</title>
+  <meta name="description" content="Ropa de lino, algodón y lana para mujer y hombre. Colecciones pequeñas, asesoramiento personal y 14 días para cambios. Tienda de barrio, ahora también online.">
+  <meta name="theme-color" content="#F6F1EA">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/inicio.js"></script>
+</head>
+<body data-pagina="inicio">
+  <header id="cabecera"></header>
+
+  <main id="contenido">
+    <section class="portada" aria-labelledby="titulo-portada">
+      <img class="portada__imagen" src="img/portada.svg" alt="Ropa de tonos naturales colgada en un perchero con luz natural" width="1600" height="1000" fetchpriority="high">
+      <div class="contenedor">
+        <div class="portada__texto">
+          <span class="antetitulo">Tienda de barrio desde 2014</span>
+          <h1 id="titulo-portada">Ropa de fibras naturales, elegida con calma</h1>
+          <p>Lino, algodón y lana con buen corte. Colecciones pequeñas para que te pongas lo que te gusta durante mucho tiempo.</p>
+          <a class="boton" href="tienda.html">Ver tienda</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-coleccion">
+      <div class="contenedor coleccion">
+        <img src="img/coleccion.svg" alt="Prendas de lino en tonos claros" width="900" height="1100" loading="lazy" decoding="async">
+        <div>
+          <span class="antetitulo">Colección destacada</span>
+          <h2 id="titulo-coleccion">Lino para cada día</h2>
+          <p>Una camiseta básica y una camisa de manga larga, las dos de lino, en blanco, arena y azul. Prendas sencillas que combinan entre sí y con lo que ya tienes en el armario.</p>
+          <p>Si no sabes qué talla elegir, escríbenos y te ayudamos.</p>
+          <a class="boton boton--secundario" href="tienda.html?q=lino">Ver prendas de lino</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--clara" aria-labelledby="titulo-destacados">
+      <div class="contenedor">
+        <div class="seccion__cabecera">
+          <span class="antetitulo">Novedades y ofertas</span>
+          <h2 id="titulo-destacados">Lo que te recomendamos ahora</h2>
+        </div>
+        <ul class="rejilla rejilla--4" id="destacados"></ul>
+        <p class="centrado"><a class="boton" href="tienda.html">Ver toda la tienda</a></p>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-valores">
+      <div class="contenedor">
+        <div class="seccion__cabecera">
+          <span class="antetitulo">Por qué Lino y Alba</span>
+          <h2 id="titulo-valores">Una tienda de barrio, también online</h2>
+        </div>
+        <ul class="valores">
+          <li>
+            <h3>Fibras naturales</h3>
+            <p>Lino, algodón y lana, con un corte cuidado.</p>
+          </li>
+          <li>
+            <h3>Colecciones pequeñas</h3>
+            <p>Pocas prendas, bien elegidas. Nada de ropa de usar y tirar.</p>
+          </li>
+          <li>
+            <h3>Te ayudamos a elegir</h3>
+            <p>Te aconsejamos sobre la talla y sobre cómo combinar cada prenda.</p>
+          </li>
+          <li>
+            <h3>Cambios fáciles</h3>
+            <p>Tienes 14 días para cambiar o devolver tu compra.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie" id="pie"></footer>
+</body>
+</html>

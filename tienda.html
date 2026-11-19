@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda · Boutique Lino y Alba</title>
+  <meta name="description" content="Catálogo de Boutique Lino y Alba: camisetas, camisas, vestidos, pantalones, jerseys y accesorios. Filtra por talla, precio y ofertas. IVA incluido.">
+  <meta name="theme-color" content="#F6F1EA">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/tienda.js"></script>
+</head>
+<body data-pagina="tienda">
+  <header id="cabecera"></header>
+
+  <main id="contenido" class="contenedor">
+    <div class="tienda">
+      <details class="filtros" id="panel-filtros">
+        <summary>Filtros</summary>
+        <form class="filtros__cuerpo" id="filtros-form" role="search" aria-label="Filtrar productos">
+          <div class="campo">
+            <label for="texto">Buscar por nombre</label>
+            <input type="search" id="texto" name="texto" placeholder="Por ejemplo: camisa" autocomplete="off">
+          </div>
+
+          <div class="campo">
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria">
+              <option value="todas">Todas</option>
+              <option value="camisetas">Camisetas</option>
+              <option value="camisas">Camisas</option>
+              <option value="vestidos">Vestidos</option>
+              <option value="pantalones">Pantalones</option>
+              <option value="jerseys">Jerseys</option>
+              <option value="abrigos">Abrigos</option>
+              <option value="faldas">Faldas</option>
+              <option value="accesorios">Accesorios</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="talla">Talla</label>
+            <select id="talla" name="talla">
+              <option value="todas">Todas</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+              <option value="44">44</option>
+              <option value="talla única">Talla única</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="precio-max">Precio máximo</label>
+            <input type="range" id="precio-max" name="precioMax" min="15" max="70" step="5" value="70" aria-describedby="precio-max-valor">
+            <span class="rango-valor" id="precio-max-valor">Sin límite</span>
+          </div>
+
+          <label class="casilla">
+            <input type="checkbox" name="soloOfertas">
+            Solo ofertas
+          </label>
+
+          <button class="boton boton--secundario boton--pequeno" type="button" data-limpiar>Limpiar filtros</button>
+        </form>
+      </details>
+
+      <section aria-labelledby="titulo-tienda">
+        <h1 id="titulo-tienda">Tienda</h1>
+        <div class="resultados-barra">
+          <p><span id="num-resultados" aria-live="polite">Cargando productos…</span> · <span class="iva">IVA incluido</span></p>
+          <div class="campo">
+            <label for="orden">Ordenar por</label>
+            <select id="orden" name="orden">
+              <option value="novedades">Novedades</option>
+              <option value="precio-asc">Precio: de menor a mayor</option>
+              <option value="precio-desc">Precio: de mayor a menor</option>
+            </select>
+          </div>
+        </div>
+
+        <ul class="rejilla" id="rejilla"></ul>
+
+        <div class="sin-resultados" id="sin-resultados" hidden>
+          <h2>No hemos encontrado nada con esos filtros</h2>
+          <p>Prueba con otra talla, sube el precio máximo o busca otra palabra.</p>
+          <button class="boton" type="button" data-limpiar>Limpiar filtros</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie" id="pie"></footer>
+</body>
+</html>
