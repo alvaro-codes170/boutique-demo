@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- El título y la descripción se cambian con JavaScript según el producto -->
+  <title>Producto · Boutique Lino y Alba</title>
+  <meta name="description" content="Ficha de producto de Boutique Lino y Alba: precio con IVA incluido, tallas, colores y 14 días para cambios y devoluciones.">
+  <meta name="theme-color" content="#F6F1EA">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/ficha.js"></script>
+</head>
+<body data-pagina="producto">
+  <header id="cabecera"></header>
+
+  <main id="contenido" class="contenedor">
+    <nav class="migas" aria-label="Estás aquí">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li aria-current="page" id="miga-actual">Producto</li>
+      </ol>
+    </nav>
+
+    <div id="ficha">
+      <p>Cargando producto…</p>
+    </div>
+  </main>
+
+  <footer class="pie" id="pie"></footer>
+</body>
+</html>
