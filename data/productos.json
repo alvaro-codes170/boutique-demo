@@ -139,7 +139,7 @@
     "colores": ["gris", "mostaza"],
     "descripcion": "Bufanda de lana para los días fríos. Suave y fácil de combinar.",
     "imagen": "img/productos/11.svg",
-    "stock": false,
+    "stock": true,
     "novedad": false
   },
   {
