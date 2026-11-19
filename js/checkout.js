@@ -212,7 +212,7 @@ function activarFormulario() {
       guardarPedido({ entrega }); // el carrito recuerda la elección
       document.getElementById('grupo-direccion').hidden = entrega !== 'domicilio';
 
-      // El pago en tienda solo aparece con recogida
+      // Los métodos marcados como soloRecogida solo aparecen con recogida
       const pagoActual = form.querySelector('input[name="pago"]:checked')?.value;
       document.getElementById('metodos-pago').innerHTML = htmlMetodosPago(entrega);
       const sigue = form.querySelector(`input[name="pago"][value="${pagoActual}"]`);

@@ -28,8 +28,8 @@ export const CARRITO = {
 
 // Reglas de envío (sección 4 del briefing). Importes en euros.
 export const ENVIO = {
-  costeDomicilio: 4.95,
-  umbralGratis: 50,     // envío gratis si los productos, YA con descuento, suman esto o más
+  costeDomicilio: 5.50,
+  umbralGratis: 60,     // envío gratis si los productos, YA con descuento, suman esto o más
   costeRecogida: 0
 };
 
@@ -37,7 +37,8 @@ export const ENVIO = {
 // porcentaje: se aplica solo a los productos, nunca al envío.
 // minimo: importe mínimo de productos (antes del descuento) para poder usarlo; 0 = sin mínimo.
 export const CODIGOS = {
-  BIENVENIDA10: { porcentaje: 10, minimo: 0 }
+  BIENVENIDA10: { porcentaje: 10, minimo: 0 },
+  OTOÑO15: { porcentaje: 15, minimo: 80 }
 };
 
 // Formas de entrega
@@ -50,8 +51,7 @@ export const ENTREGAS = {
 export const METODOS_PAGO = [
   // texto: en los botones del checkout · frase: dentro de una frase en los textos
   { valor: 'tarjeta', texto: 'Tarjeta', frase: 'tarjeta', soloRecogida: false },
-  { valor: 'bizum', texto: 'Bizum', frase: 'Bizum', soloRecogida: false },
-  { valor: 'tienda', texto: 'Pago en tienda al recoger', frase: 'pago en tienda al recoger', soloRecogida: true }
+  { valor: 'bizum', texto: 'Bizum', frase: 'Bizum', soloRecogida: false }
 ];
 
 // Nombres visibles de las categorías (en el JSON van en minúsculas y sin tildes)

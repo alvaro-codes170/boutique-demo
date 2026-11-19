@@ -139,7 +139,7 @@
     "colores": ["gris", "mostaza"],
     "descripcion": "Bufanda de lana para los días fríos. Suave y fácil de combinar.",
     "imagen": "img/productos/11.svg",
-    "stock": false,
+    "stock": true,
     "novedad": false
   },
   {
@@ -152,6 +152,19 @@
     "colores": ["crudo", "negro"],
     "descripcion": "Gorro de punto sencillo para el invierno. Un pequeño básico que se agradece.",
     "imagen": "img/productos/12.svg",
+    "stock": true,
+    "novedad": false
+  },
+  {
+    "id": 13,
+    "nombre": "Camisa de rayas",
+    "categoria": "camisas",
+    "precio": 41.90,
+    "precioOferta": null,
+    "tallas": ["S", "M", "L", "XL"],
+    "colores": ["azul", "blanco"],
+    "descripcion": "Camisa de rayas de aire clásico. Fácil de llevar sola o con un jersey por encima.",
+    "imagen": "img/productos/13.svg",
     "stock": true,
     "novedad": false
   }

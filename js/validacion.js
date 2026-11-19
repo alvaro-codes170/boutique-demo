@@ -39,7 +39,7 @@ const reglas = {
   pago: (d) => {
     const metodo = METODOS_PAGO.find((m) => m.valor === d.pago);
     if (!metodo) return 'Elige un método de pago.';
-    if (metodo.soloRecogida && d.entrega !== 'recogida') return 'El pago en tienda solo es posible si recoges el pedido en la tienda.';
+    if (metodo.soloRecogida && d.entrega !== 'recogida') return 'Ese método de pago solo es posible si recoges el pedido en la tienda.';
     return '';
   },
   condiciones: (d) => (d.condiciones ? '' : 'Tienes que aceptar las condiciones de venta para continuar.'),
