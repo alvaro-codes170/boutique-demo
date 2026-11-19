@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Envíos, devoluciones, horario y contacto · Boutique Lino y Alba</title>
+  <meta name="description" content="Envío a domicilio o recogida gratis en tienda, 14 días para cambios y devoluciones, horario de la tienda en Fuente Alta y cómo contactar con Lino y Alba.">
+  <meta name="theme-color" content="#F6F1EA">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/layout.js"></script>
+</head>
+<body data-pagina="informacion">
+  <header id="cabecera"></header>
+
+  <main id="contenido">
+    <div class="contenedor">
+      <div class="cabecera-pagina">
+        <h1>Información</h1>
+        <p>Todo lo que necesitas saber para comprar con tranquilidad. Si te queda alguna duda, escríbenos.</p>
+        <nav aria-label="En esta página">
+          <ul class="indice">
+            <li><a href="#envios">Envíos y recogida</a></li>
+            <li><a href="#cambios">Cambios y devoluciones</a></li>
+            <li><a href="#pagos">Pagos</a></li>
+            <li><a href="#tienda">Horario y dirección</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="bloques-info">
+        <section class="bloque-info" id="envios" aria-labelledby="titulo-envios">
+          <h2 id="titulo-envios">Envíos y recogida</h2>
+          <ul>
+            <li><strong>Envío a domicilio:</strong> <span data-dato="envio-coste">4,95 €</span>.</li>
+            <li><strong>Envío gratis</strong> si tus productos suman <span data-dato="envio-umbral">50,00 €</span> o más, una vez aplicado el código de descuento si lo usas.</li>
+            <li><strong>Recogida en tienda:</strong> siempre gratis.</li>
+          </ul>
+          <p>Todos los precios incluyen el IVA.</p>
+        </section>
+
+        <section class="bloque-info" id="cambios" aria-labelledby="titulo-cambios">
+          <h2 id="titulo-cambios">Cambios y devoluciones</h2>
+          <p>Tienes <strong>14 días</strong> desde que recibes tu pedido para cambiar o devolver una prenda, siempre que esté sin usar y conserve su etiqueta.</p>
+          <p>Para hacer un cambio o una devolución, escríbenos o pásate por la tienda y te explicamos cómo seguir.</p>
+          <p><a href="condiciones-venta.html#desistimiento">Consulta el derecho de desistimiento en las condiciones de venta</a>.</p>
+        </section>
+
+        <section class="bloque-info" id="pagos" aria-labelledby="titulo-pagos">
+          <h2 id="titulo-pagos">Pagos</h2>
+          <p>Puedes pagar con <span data-dato="metodos-pago">tarjeta, Bizum y pago en tienda al recoger</span>. El pago en tienda solo es posible si eliges recogida.</p>
+          <p class="aviso-permanente"><strong>Esta web es una demostración:</strong> los pagos son simulados y no se realiza ningún cargo.</p>
+        </section>
+
+        <section class="bloque-info" id="tienda" aria-labelledby="titulo-tienda">
+          <h2 id="titulo-tienda">Horario y dirección</h2>
+          <address data-dato="direccion">Calle Mayor 5, bajo, 28996 Fuente Alta</address>
+          <ul class="horario" data-dato-horario>
+            <li>Lunes a viernes: 10:00 a 14:00 y 17:00 a 20:30</li>
+            <li>Sábados: 10:00 a 14:00</li>
+            <li>Domingos: cerrado</li>
+          </ul>
+          <!-- Marcador del mapa: la dirección es ficticia. Con una dirección real se puede
+               poner un enlace a un mapa o insertarlo (ver la política de cookies). -->
+          <div class="mapa" role="img" aria-label="Espacio reservado para el mapa de la tienda">
+            <p>Mapa de la tienda<br><small>Pendiente: la dirección del ejercicio es ficticia</small></p>
+          </div>
+        </section>
+
+        <section class="bloque-info" id="contacto" aria-labelledby="titulo-contacto">
+          <h2 id="titulo-contacto">Contacto</h2>
+          <p>¿Dudas con la talla o con cómo combinar una prenda? Te ayudamos a elegir.</p>
+          <ul class="contacto">
+            <li><strong>Teléfono:</strong> <a href="tel:+34600000003" data-dato="telefono">600 000 003</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/34600000003" target="_blank" rel="noopener">escríbenos por WhatsApp<span class="solo-lectores"> (se abre en una ventana nueva)</span></a></li>
+            <li><strong>Correo:</strong> <a href="mailto:tienda@linoyalba.example" data-dato="correo">tienda@linoyalba.example</a></li>
+            <li><strong>Instagram:</strong> <span data-dato="instagram">@linoyalba</span></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie" id="pie"></footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Todo el sitio se puede rastrear. El carrito y el checkout llevan
+# <meta name="robots" content="noindex"> para que no salgan en buscadores.
+User-agent: *
+Allow: /
+
+Sitemap: https://alvaro-codes170.github.io/boutique-demo/sitemap.xml
