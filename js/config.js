@@ -51,8 +51,7 @@ export const ENTREGAS = {
 export const METODOS_PAGO = [
   // texto: en los botones del checkout · frase: dentro de una frase en los textos
   { valor: 'tarjeta', texto: 'Tarjeta', frase: 'tarjeta', soloRecogida: false },
-  { valor: 'bizum', texto: 'Bizum', frase: 'Bizum', soloRecogida: false },
-  { valor: 'tienda', texto: 'Pago en tienda al recoger', frase: 'pago en tienda al recoger', soloRecogida: true }
+  { valor: 'bizum', texto: 'Bizum', frase: 'Bizum', soloRecogida: false }
 ];
 
 // Nombres visibles de las categorías (en el JSON van en minúsculas y sin tildes)
