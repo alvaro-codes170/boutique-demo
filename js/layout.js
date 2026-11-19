@@ -126,7 +126,7 @@ function unirLista(items) {
 
 /**
  * Datos que se repiten en los textos (información, condiciones de venta...).
- * En el HTML se escriben así: <span data-dato="envio-coste">4,95 €</span>
+ * En el HTML se escriben así: <span data-dato="envio-coste">5,50 €</span>
  * El texto de dentro es el de reserva; al cargar se sustituye por el valor
  * de config.js. Así, si cambia una regla, cambia en todas las páginas.
  */

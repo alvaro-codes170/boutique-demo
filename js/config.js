@@ -28,8 +28,8 @@ export const CARRITO = {
 
 // Reglas de envío (sección 4 del briefing). Importes en euros.
 export const ENVIO = {
-  costeDomicilio: 4.95,
-  umbralGratis: 50,     // envío gratis si los productos, YA con descuento, suman esto o más
+  costeDomicilio: 5.50,
+  umbralGratis: 60,     // envío gratis si los productos, YA con descuento, suman esto o más
   costeRecogida: 0
 };
 
